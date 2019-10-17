@@ -23,14 +23,12 @@ public class TC_004_Fill_Flight_Details {
 	//enter inputs for signin for find a flight
 	//@Test(priority = 2)
 	
-	/*findaflight.signInForFlight("ani123","ani123");
-	FillPassangerDetail fillDetls = new FillPassangerDetail(driver);	
-	fillDetls.selectTripType();
-	fillDetls.selectPass("3");
-	fillDetls.departureCountry("New York");
-	fillDetls.departDate("February","9");*/
+	
 	findaflight.signInForFlight("ani123","ani123");
 	FillPassangerDetail fillDetls = new FillPassangerDetail(driver);
 	fillDetls.singleMethodToFillDetails("4","New York","February","9","Portland","December","11", "Blue Skies Airlines");
+	BookAFlight bFlight = new BookAFlight(driver);
+	bFlight.singleMethodToBookAflight("Anita", "Pal","Hindu","Neelesh", "Pal","Kosher", "B", "C","Hindu", "D", "E","Kosher", "Visa", "459170723423", "01", "2009", "Anita", " ","pal", "gg", "hh", "KNP", "SN", "209217", "TOGO", "hh", "ii", "jj", "C", "805241", "SYRIA");
+	driver.close();
 }
 }
