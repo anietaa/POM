@@ -99,7 +99,7 @@ public class BookAFlight {
 	}
 	
 	public void clickOnTicketlessCheckBox() {
-		check_box_ticketless = driver.findElement(check_box_Ticketless).isEnabled();
+		check_box_ticketless = driver.findElement(check_box_Ticketless).isSelected();
 	}
 	
 	public void enterBillingAddress(String add1,String add2,String cityName,String stName,String zipCode,String counName) {
@@ -118,7 +118,7 @@ public class BookAFlight {
 	}
 	
 	public void clickOnCheckBox_Delivery_Address() {
-		 check_box_del_add = driver.findElement(check_box_sameAsDeliveryAddress).isEnabled();
+		 check_box_del_add = driver.findElement(check_box_sameAsDeliveryAddress).isSelected();
 	}
 	
 	public void enterDeliveryAddress(String dAdd1,String dAdd2,String dCity,String dState,String dZipCode,String dCounName) {
